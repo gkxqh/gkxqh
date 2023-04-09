@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>刻御晴空</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-04-09T05:14:36.857Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>刻御晴空</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>树莓派安装Windows ARM</title>
+    <link href="http://example.com/2023/04/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/"/>
+    <id>http://example.com/2023/04/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/</id>
+    <published>2023-04-08T15:16:24.366Z</published>
+    <updated>2023-04-09T05:14:36.857Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;注意：&lt;/p&gt;
+&lt;p&gt;1.安装的是ARM架构的Windows！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;准备工具及系统镜像&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Windows on Raspberry imager&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2023/04/02/hello-world/"/>
+    <id>http://example.com/2023/04/02/hello-world/</id>
+    <published>2023-04-02T03:24:17.802Z</published>
+    <updated>2023-04-02T03:52:25.319Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Welcome&quot;&gt;&lt;a href=&quot;#Welcome&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

@@ -41,7 +41,8 @@
           font-size: 1.6rem;
         }
       </style>
-    </head>
+    <link rel="alternate" href="/atom.xml" title="刻御晴空" type="application/atom+xml">
+</head>
   </html>
 </html>
 
@@ -86,10 +87,15 @@
       <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
-      <a href="/2023/04/04/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/" class="archive-article-date">
-  <time datetime="2023-04-04T15:40:07.797Z" itemprop="datePublished">04/04</time>
+      <a href="/2023/04/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/" class="archive-article-date">
+  <time datetime="2023-04-08T15:16:24.366Z" itemprop="datePublished">04/08</time>
 </a>
-      
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2023/04/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/"
+    >树莓派安装Windows ARM</a> 
+</h2>
+ 
 
     </header>
     
@@ -143,6 +149,13 @@
     <ul>
       <li>
         
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
       </li>
     </ul>
     <ul>
@@ -152,7 +165,7 @@
       
       <li>
           <img src="/images/beian.png"></img>
-          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" target="_black" rel="nofollow">备锤子案</a>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" target="_black" rel="nofollow">不要备案，会变得不幸</a>
       </li>
         
     </ul>
@@ -204,11 +217,15 @@
     </li>
     
     <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://wwqz.lanzoue.com/b0387vwna">网盘</a>
+    </li>
+    
+    <li class="nav-item">
       <a class="nav-item-link" href="/friends">友链</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于</a>
     </li>
     
   </ul>
@@ -385,7 +402,9 @@
 <!-- Katex -->
 
 <!-- busuanzi  -->
-
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
 <!-- ClickLove -->
 
 <!-- ClickBoom1 -->
@@ -466,43 +485,24 @@
 
 
     
+    <div id="music">
     
-<script>
-  const password = "123456";
-  const lock_password = window.sessionStorage.getItem("lock_password");
-  console.log(password, lock_password);
-  if (lock_password !== password) {
-    Swal.fire({
-      title: "Please enter password",
-      input: "text",
-      inputAttributes: {
-        autocapitalize: "off",
-      },
-      showCancelButton: false,
-      showLoaderOnConfirm: true,
-      allowOutsideClick: false,
-      confirmButtonText: "Ok",
-    }).then((result) => {
-      console.log(result);
-      if (result.isConfirmed) {
-        console.log(password);
-        if (result.value === password) {
-          window.sessionStorage.setItem("lock_password", result.value);
-        } else {
-          Swal.fire({
-            icon: "error",
-            title: "Incorrect password, please try again",
-            confirmButtonText: "Ok",
-            allowOutsideClick: false,
-          }).then(() => {
-            window.location.reload();
-          });
-        }
-      }
-    });
-  }
-</script>
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=22707008&auto=1&height=32"></iframe>
+</div>
 
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
 
   </div>
 </body>

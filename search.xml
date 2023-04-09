@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/04/02/hello-world/</url>
+    <content><![CDATA[<h2 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a>Welcome</h2>]]></content>
+  </entry>
+  <entry>
+    <title>树莓派安装Windows ARM</title>
+    <url>/2023/04/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/</url>
+    <content><![CDATA[<p>注意：</p>
+<p>1.安装的是ARM架构的Windows！</p>
+<p><strong>准备工具及系统镜像</strong></p>
+<ol>
+<li><em>Windows on Raspberry imager</em></li>
+</ol>
+<p><a href="https://www.worproject.ml/downloads#windows-on-raspberry-imager">下载页面</a></p>
+<p>官方提供Google Drive的下载链接。</p>
+<ol start="2">
+<li><em>Windows  ARM系统镜像</em></li>
+</ol>
+<p>方法一：访问<a href="https://uupdump.net/">UUP dump</a> 或 <a href="https://uup.rg-adguard.net/">UUP (Unified Update Platform) Generation Project</a></p>
+<!-- ![](https://i0.hdslb.com/bfs/article/39ae416fb4c571f9c6a65ff582fc877cbbc58210.jpg@942w_216h_progressive.webp) -->
+
+<p>选择想要安装的系统版本，如想要尝试Windows 11（Windows on ARM 11添加了对x64应用的支持），则选择“Latest Dev Channel build”，否则选择“Latest Public Release build”即可。记得要点选对应版本右侧的“arm64”按钮。</p>
+<p>方法二（推荐）：访问<a href="https://next.itellyou.cn/">NEXT, ITELLYOU</a>，注册并登录，下载ARM架构的镜像（Win 10或Win 11）</p>
+<!-- ![](F:\Users\KeQing\AppData\Roaming\marktext\images\2023-04-08-22-10-10-image.png) -->
+
+<p>选择系统的语言及勾选想要的系统版本后（如Windows Home或Windows Pro，勾选其一即可），Summary页面的选项保持默认即可。下载压缩包并解压，以管理员权限运行uup_download_windows.cmd文件。下载需要等待一段时间，同时保证电脑硬盘中有足够的空间（5GB左右）。</p>
+<p><strong>写入系统镜像</strong></p>
+<p>使用刚刚下载的Windows on Raspberry imager将系统镜像写入SD卡，依次选择SD卡的盘符（注意不要选错了）、刚刚下载打包生成的系统镜像、以及由软件自动下载驱动以及UEFI固件后，就可以写入了。</p>
+<!-- ![](https://i0.hdslb.com/bfs/article/ab94c4393537bf2873a6c2b9218dcb2df8535fce.jpg@942w_537h_progressive.webp) -->
+
+<p><strong>启动并初次设置Windows系统</strong></p>
+<p>将SD卡插入树莓派并插电启动，出现树莓的界面后，需要耐心等待一段时间，树莓图案的下方会出现旋转的等待圆环，表示系统正在启动。</p>
+<!-- ![](https://i0.hdslb.com/bfs/article/7a43c337df0802433750d2895e3c0db752cfdb2f.jpg@942w_531h_progressive.webp)![](https://i0.hdslb.com/bfs/article/797811c166dd89912b22a51bbeac29a2a6e52077.jpg@942w_531h_progressive.webp) -->
+
+<p>之后就能正常进入系统</p>
+<!-- ![](https://i0.hdslb.com/bfs/article/6f5c025ba04e4fd4608e6abe43fb5428750921e2.jpg@942w_530h_progressive.webp) -->
+
+<p>初次启动Windows 11时，系统可能需要强制下载更新并安装。这段时间会比较久，也请耐心等待。</p>
+<p>PS：解除树莓派4（Pi4&#x2F;Pi400）内存默认限制为3G的解决方法：</p>
+<p>在插电启动时，一直按“ESC”键，直到进入了UEFI的设置界面。之后导航至</p>
+<blockquote>
+<p><em>“Device Manager -&gt; Raspberry Pi Configuration -&gt; Advanced Configuration”</em></p>
+</blockquote>
+<p>将<em>“Limit RAM to 3 GB”</em>的选项设定为“Disabled（禁用）”。</p>
+<p>在这个设置页面同时还能设置CPU的频率，建议将CPU频率调至“Max”，应该能在一定程度上改善系统运行的性能和使用体验。</p>
+<p>（同步发至<a href="https://www.coolapk.com/feed/34190482?shareKey=ODZjMDczOWQ3YTQxNjIyYzg0ZDY~&shareUid=11448565&shareFrom=com.coolapk.market_12.0.7">酷安</a> 和<a href="https://www.bilibili.com/read/cv15630796">哔哩哔哩</a>）</p>
+]]></content>
+  </entry>
+</search>

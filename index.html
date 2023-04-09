@@ -41,7 +41,8 @@
           font-size: 1.6rem;
         }
       </style>
-    </head>
+    <link rel="alternate" href="/atom.xml" title="刻御晴空" type="application/atom+xml">
+</head>
   </html>
 </html>
 
@@ -160,48 +161,72 @@
     
     
     <article
-  id="post-树莓派安装win11/树莓派安装win11"
+  id="post-树莓派安装win11"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
 >
   <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/04/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/"
+    >树莓派安装Windows ARM</a> 
+</h2>
+ 
+
+      
+    </header>
      
     <div class="article-meta">
-      <a href="/2023/04/04/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/" class="article-date">
-  <time datetime="2023-04-04T15:40:07.797Z" itemprop="datePublished">2023-04-04</time>
+      <a href="/2023/04/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/" class="article-date">
+  <time datetime="2023-04-08T15:16:24.366Z" itemprop="datePublished">2023-04-08</time>
 </a>    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p><strong>树莓派安装Windows ARM</strong><br>注意：</p>
+  <p>注意：</p>
 <p>1.安装的是ARM架构的Windows！</p>
 <p><strong>准备工具及系统镜像</strong></p>
 <ol>
 <li><em>Windows on Raspberry imager</em></li>
 </ol>
-<p>下载页面：<a target="_blank" rel="noopener" href="https://www.worproject.ml/downloads#windows-on-raspberry-imager">https://www.worproject.ml/downloads#windows-on-raspberry-imager</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.worproject.ml/downloads#windows-on-raspberry-imager">下载页面</a></p>
 <p>官方提供Google Drive的下载链接。</p>
 <ol start="2">
 <li><em>Windows  ARM系统镜像</em></li>
 </ol>
-<p>方法一：访问UUP dump网站（<a target="_blank" rel="noopener" href="https://uupdump.net/%EF%BC%89%E6%88%96UUP">https://uupdump.net/）或UUP</a> (Unified Update Platform) Generation Project（<a target="_blank" rel="noopener" href="https://uup.rg-adguard.net/%EF%BC%89%EF%BC%88%E4%BB%A5%E5%89%8D%E8%80%85%E4%B8%BA%E4%BE%8B%EF%BC%89%E3%80%82">https://uup.rg-adguard.net/）（以前者为例）。</a><br><img src="/1.webp"></p>
+<p>方法一：访问<a target="_blank" rel="noopener" href="https://uupdump.net/">UUP dump</a> 或 <a target="_blank" rel="noopener" href="https://uup.rg-adguard.net/">UUP (Unified Update Platform) Generation Project</a></p>
+<!-- ![](https://i0.hdslb.com/bfs/article/39ae416fb4c571f9c6a65ff582fc877cbbc58210.jpg@942w_216h_progressive.webp) -->
+
 <p>选择想要安装的系统版本，如想要尝试Windows 11（Windows on ARM 11添加了对x64应用的支持），则选择“Latest Dev Channel build”，否则选择“Latest Public Release build”即可。记得要点选对应版本右侧的“arm64”按钮。</p>
-<p>方法二（推荐）：访问<a target="_blank" rel="noopener" href="https://next.itellyou.cn/">NEXT, ITELLYOU</a>（<a target="_blank" rel="noopener" href="https://next.itellyou.cn/%EF%BC%89%EF%BC%8C%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%99%BB%E5%BD%95%EF%BC%8C%E4%B8%8B%E8%BD%BDARM%E6%9E%B6%E6%9E%84%E7%9A%84%E9%95%9C%E5%83%8F%EF%BC%88Win">https://next.itellyou.cn/），注册并登录，下载ARM架构的镜像（Win</a> 10或Win 11）<img src="https://github.com/gkxqh/gkxqh.github.io/blob/main/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85win11/2.png"></p>
+<p>方法二（推荐）：访问<a target="_blank" rel="noopener" href="https://next.itellyou.cn/">NEXT, ITELLYOU</a>，注册并登录，下载ARM架构的镜像（Win 10或Win 11）</p>
+<!-- ![](F:\Users\KeQing\AppData\Roaming\marktext\images\2023-04-08-22-10-10-image.png) -->
+
 <p>选择系统的语言及勾选想要的系统版本后（如Windows Home或Windows Pro，勾选其一即可），Summary页面的选项保持默认即可。下载压缩包并解压，以管理员权限运行uup_download_windows.cmd文件。下载需要等待一段时间，同时保证电脑硬盘中有足够的空间（5GB左右）。</p>
 <p><strong>写入系统镜像</strong></p>
-<p>使用刚刚下载的Windows on Raspberry imager将系统镜像写入SD卡，依次选择SD卡的盘符（注意不要选错了）、刚刚下载打包生成的系统镜像、以及由软件自动下载驱动以及UEFI固件后，就可以写入了。<img src="https://i0.hdslb.com/bfs/article/ab94c4393537bf2873a6c2b9218dcb2df8535fce.jpg@942w_537h_progressive.webp"></p>
+<p>使用刚刚下载的Windows on Raspberry imager将系统镜像写入SD卡，依次选择SD卡的盘符（注意不要选错了）、刚刚下载打包生成的系统镜像、以及由软件自动下载驱动以及UEFI固件后，就可以写入了。</p>
+<!-- ![](https://i0.hdslb.com/bfs/article/ab94c4393537bf2873a6c2b9218dcb2df8535fce.jpg@942w_537h_progressive.webp) -->
+
 <p><strong>启动并初次设置Windows系统</strong></p>
-<p>将SD卡插入树莓派并插电启动，出现树莓的界面后，需要耐心等待一段时间，树莓图案的下方会出现旋转的等待圆环，表示系统正在启动。<img src="https://i0.hdslb.com/bfs/article/7a43c337df0802433750d2895e3c0db752cfdb2f.jpg@942w_531h_progressive.webp"><img src="https://i0.hdslb.com/bfs/article/797811c166dd89912b22a51bbeac29a2a6e52077.jpg@942w_531h_progressive.webp"></p>
-<p>之后就能正常进入系统：<img src="https://i0.hdslb.com/bfs/article/6f5c025ba04e4fd4608e6abe43fb5428750921e2.jpg@942w_530h_progressive.webp"></p>
+<p>将SD卡插入树莓派并插电启动，出现树莓的界面后，需要耐心等待一段时间，树莓图案的下方会出现旋转的等待圆环，表示系统正在启动。</p>
+<!-- ![](https://i0.hdslb.com/bfs/article/7a43c337df0802433750d2895e3c0db752cfdb2f.jpg@942w_531h_progressive.webp)![](https://i0.hdslb.com/bfs/article/797811c166dd89912b22a51bbeac29a2a6e52077.jpg@942w_531h_progressive.webp) -->
+
+<p>之后就能正常进入系统</p>
+<!-- ![](https://i0.hdslb.com/bfs/article/6f5c025ba04e4fd4608e6abe43fb5428750921e2.jpg@942w_530h_progressive.webp) -->
+
 <p>初次启动Windows 11时，系统可能需要强制下载更新并安装。这段时间会比较久，也请耐心等待。</p>
-<p>PS：解除树莓派4（Pi4&#x2F;Pi400)内存默认限制为3G的解决方法：</p>
+<p>PS：解除树莓派4（Pi4&#x2F;Pi400）内存默认限制为3G的解决方法：</p>
 <p>在插电启动时，一直按“ESC”键，直到进入了UEFI的设置界面。之后导航至</p>
-<p><em>“Device Manager -&gt; Raspberry Pi Configuration -&gt; Advanced Configuration”</em>页面，将<em>“Limit RAM to 3 GB”</em>的选项设定为“Disabled（禁用）”。</p>
+<blockquote>
+<p><em>“Device Manager -&gt; Raspberry Pi Configuration -&gt; Advanced Configuration”</em></p>
+</blockquote>
+<p>将<em>“Limit RAM to 3 GB”</em>的选项设定为“Disabled（禁用）”。</p>
 <p>在这个设置页面同时还能设置CPU的频率，建议将CPU频率调至“Max”，应该能在一定程度上改善系统运行的性能和使用体验。</p>
-<p>（同步发至酷安：<a target="_blank" rel="noopener" href="https://www.coolapk.com/feed/34190482?shareKey=ODZjMDczOWQ3YTQxNjIyYzg0ZDY~&shareUid=11448565&shareFrom=com.coolapk.market_12.0.7">https://www.coolapk.com/feed/34190482?shareKey=ODZjMDczOWQ3YTQxNjIyYzg0ZDY~&amp;shareUid=11448565&amp;shareFrom=com.coolapk.market_12.0.7</a> ）</p>
+<p>（同步发至<a target="_blank" rel="noopener" href="https://www.coolapk.com/feed/34190482?shareKey=ODZjMDczOWQ3YTQxNjIyYzg0ZDY~&shareUid=11448565&shareFrom=com.coolapk.market_12.0.7">酷安</a> 和<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv15630796">哔哩哔哩</a>）</p>
  
       <!-- reward -->
       
@@ -292,6 +317,13 @@
     <ul>
       <li>
         
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
       </li>
     </ul>
     <ul>
@@ -301,7 +333,7 @@
       
       <li>
           <img src="/images/beian.png"></img>
-          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" target="_black" rel="nofollow">备锤子案</a>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" target="_black" rel="nofollow">不要备案，会变得不幸</a>
       </li>
         
     </ul>
@@ -353,11 +385,15 @@
     </li>
     
     <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://wwqz.lanzoue.com/b0387vwna">网盘</a>
+    </li>
+    
+    <li class="nav-item">
       <a class="nav-item-link" href="/friends">友链</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于</a>
     </li>
     
   </ul>
@@ -534,7 +570,9 @@
 <!-- Katex -->
 
 <!-- busuanzi  -->
-
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
 <!-- ClickLove -->
 
 <!-- ClickBoom1 -->
@@ -615,43 +653,24 @@
 
 
     
+    <div id="music">
     
-<script>
-  const password = "123456";
-  const lock_password = window.sessionStorage.getItem("lock_password");
-  console.log(password, lock_password);
-  if (lock_password !== password) {
-    Swal.fire({
-      title: "Please enter password",
-      input: "text",
-      inputAttributes: {
-        autocapitalize: "off",
-      },
-      showCancelButton: false,
-      showLoaderOnConfirm: true,
-      allowOutsideClick: false,
-      confirmButtonText: "Ok",
-    }).then((result) => {
-      console.log(result);
-      if (result.isConfirmed) {
-        console.log(password);
-        if (result.value === password) {
-          window.sessionStorage.setItem("lock_password", result.value);
-        } else {
-          Swal.fire({
-            icon: "error",
-            title: "Incorrect password, please try again",
-            confirmButtonText: "Ok",
-            allowOutsideClick: false,
-          }).then(() => {
-            window.location.reload();
-          });
-        }
-      }
-    });
-  }
-</script>
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=22707008&auto=1&height=32"></iframe>
+</div>
 
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
 
   </div>
 </body>
